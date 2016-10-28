@@ -80,7 +80,8 @@
                       <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void();">ผู้ที่สนใจ<span class="caret"></span></a>
                       <ul class="dropdown-menu">
                         <li><a href="?page=majors">ปริญญาตรี</a></li>
-                        <!--<li><a href="#">ปริญญาโท</a></li>-->
+                        <li><a href="#">ปริญญาโท</a></li>
+                        <li><a href="?page=instructors">อาจารย์</a></li>
                         <li><a href="?page=rate">ค่าใช้จ่าย</a></li>
                         <li><a href="<?php echo $_CONFIG['admissionLink'] ?>">สมัครเรียน</a></li>
                         <li><a href="<?php echo $_CONFIG['scholarship'] ?>">ทุนการศึกษา</a></li>
@@ -108,7 +109,7 @@
                     <li<?php echo $page=='index2'?' class="active"':'';?>>
                       <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void();">ศิษย์ปัจจุบัน<span class="caret"></span></a>
                       <ul class="dropdown-menu">
-                        <li><a href="<?php echo $_CONFIG['aes'] ?>">ประเมิณอาจารย์ที่ปรึกษา</a></li>
+                        <li><a href="<?php echo $_CONFIG['aes'] ?>">ประเมินอาจารย์ที่ปรึกษา</a></li>
                         <li class="dropdown-submenu">
                           <a tabindex="-1" href="javascript:void();">ข่าวและกิจกรรม</a>
                           <ul class="dropdown-menu">

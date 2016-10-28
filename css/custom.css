@@ -130,6 +130,7 @@ i.tabl {
 
 .myphoto img{
     position: relative;
+    width:100%;
     z-index: -1;
 }
 
