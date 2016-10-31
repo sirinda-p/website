@@ -118,7 +118,7 @@
                           </ul>
                         </li>
                         <li><a href="?page=timetable">ตารางสอน</a></li>
-                        <li><a href="?page=post">ประกาศจากคณะ</a></li>
+                        <li><a href="?page=news&type=D">ประกาศจากคณะ</a></li>
                       </ul>
                     </li>
                     <li<?php echo $page=='contactus'?' class="active"':'';?>><a href="?page=contactus">ติดต่อเรา</a></li>
