@@ -98,8 +98,8 @@
                     <li<?php echo $page=='index2'?' class="active"':'';?>>
                       <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void();">ผลงานวิชาการ<span class="caret"></span></a>
                       <ul class="dropdown-menu">
-                        <li><a href="?page=majors">นักศึกษา</a></li>
-                        <li><a href="?page=majors">อาจารย์</a></li>
+                        <li><a href="#">นักศึกษา</a></li>
+                        <li><a href="#">อาจารย์</a></li>
                       </ul>
                     </li>
                     <li<?php echo $page=='index2'?' class="active"':'';?>>
