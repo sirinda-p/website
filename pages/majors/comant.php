@@ -160,7 +160,7 @@
             <div id="menu1" class="tab-pane fade">
               <h3>รายละเอียดหลักสูตร</h3>
               <p style="padding-left:20px;">
-                <a href="files/Degree-plan-วิทยาศาสตร์_2559_ANI.pdf" target="_blank" class="downloadDegree">หลักสูตรสาขาวิชาคอมพิวเตอร์แอนิเมชั่น (ปรับปรุง) พ.ศ. 2558 - ปัจจุบัน (ดูรายละเอียด)</a>
+                <a href="files/Degree-plan_2559_ANI.pdf" target="_blank" class="downloadDegree">หลักสูตรสาขาวิชาคอมพิวเตอร์แอนิเมชั่น (ปรับปรุง) พ.ศ. 2558 - ปัจจุบัน (ดูรายละเอียด)</a>
               </p>
             </div>
             <div id="menu2" class="tab-pane fade">

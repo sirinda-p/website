@@ -200,7 +200,7 @@
             <div id="menu1" class="tab-pane fade">
               <h3>รายละเอียดหลักสูตร</h3>
               <p style="padding-left:20px;">
-                <a href="files/Degree-plan-วิทยาศาสตร์_2559_FBM.pdf" target="_blank" class="downloadDegree">หลักสูตรสาขาวิชาการจัดการธุรกิจอาหาร (ปรับปรุง) พ.ศ. 2554 - ปัจจุบัน (ดูรายละเอียด)</a>
+                <a href="files/Degree-plan_2559_FBM.pdf" target="_blank" class="downloadDegree">หลักสูตรสาขาวิชาการจัดการธุรกิจอาหาร (ปรับปรุง) พ.ศ. 2554 - ปัจจุบัน (ดูรายละเอียด)</a>
               </p>
             </div>
             <div id="menu2" class="tab-pane fade">
