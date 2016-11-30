@@ -70,7 +70,6 @@
                   <img class="logo dark" src="images/logo-d.png"/>
                 </a>
             </div>
-
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
@@ -87,13 +86,13 @@
                         <li><a href="<?php echo $_CONFIG['scholarship'] ?>">ทุนการศึกษา</a></li>
                         <!--<li><a href="#">สิ่งส่งเสริมการศึกษา</a></li>-->
                         <li><a href="?page=dorms">หอพัก</a></li>
-                        <li class="dropdown-submenu">
+                        <!-- <li class="dropdown-submenu">
                           <a tabindex="-1" href="javascript:void();">ความร่วมมือกับภายนอก</a>
                           <ul class="dropdown-menu">
                             <li><a href="#">Micresoft</a></li>
-                            <li><a href="#">Apple</a></li>
+                            <li><a href="#">Apple</a></li
                           </ul>
-                        </li>
+                        </li>  >-->
                       </ul>
                     </li>
                     <li<?php echo $page=='index2'?' class="active"':'';?>>
