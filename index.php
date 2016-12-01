@@ -103,7 +103,14 @@
                       </ul>
                     </li>
                     <li<?php echo $page=='index2'?' class="active"':'';?>>
-                      <a href="javascript:void();">งานประชุมวิชาการ</a>
+                       <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void();">งานประชุมวิชาการ<span class="caret"></span></a>
+					  
+                      <ul class="dropdown-menu">
+					    <li><a href="?page=Conferrent2559">2559</a></li>
+                        <li><a href="?page=Conferrent2558">2558</a></li>
+                      </ul>
+                    </li>
+                    <li<?php echo $page=='index2'?' class="active"':'';?>>
                   </li>
                     <li<?php echo $page=='index2'?' class="active"':'';?>>
                       <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void();">ศิษย์ปัจจุบัน<span class="caret"></span></a>
