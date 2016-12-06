@@ -74,7 +74,8 @@
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
                     <li<?php echo $page=='index'?' class="active"':'';?>><a href="?page=index">หน้าแรก</a></li>
-                    <!--<li<?php echo $page=='aboutus'?' class="active"':'';?>><a href="?page=aboutus">เกี่ยวกับเรา</a></li>-->
+                    <li<?php echo $page=='aboutus'?' class="active"':'';?>><a href="?page=aboutus">เกี่ยวกับเรา</a></li> 
+				 
                     <li<?php echo $page=='index2'?' class="active"':'';?>>
                       <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void();">ผู้ที่สนใจ<span class="caret"></span></a>
                       <ul class="dropdown-menu">
@@ -96,20 +97,14 @@
                       </ul>
                     </li>
                     <li<?php echo $page=='index2'?' class="active"':'';?>>
-                      <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void();">ผลงานวิชาการ<span class="caret"></span></a>
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void();">งานวิชาการ<span class="caret"></span></a>
                       <ul class="dropdown-menu">
-                        <li><a href="#">นักศึกษา</a></li>
-                        <li><a href="#">อาจารย์</a></li>
+                        <li><a href="#">ผลงานนักศึกษา</a></li>
+                        <li><a href="#">ผลงานอาจารย์</a></li>
+						<li><a href="#">งานประชุมวิชาการ</a></li>
                       </ul>
                     </li>
-                    <li<?php echo $page=='index2'?' class="active"':'';?>>
-                       <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void();">งานประชุมวิชาการ<span class="caret"></span></a>
-					  
-                      <ul class="dropdown-menu">
-					    <li><a href="?page=Conference2559">2559</a></li>
-                        <li><a href="?page=Conference2558">2558</a></li>
-                      </ul>
-                    </li>
+                  
                     <li<?php echo $page=='index2'?' class="active"':'';?>>
                   </li>
                     <li<?php echo $page=='index2'?' class="active"':'';?>>
