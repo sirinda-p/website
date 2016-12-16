@@ -101,7 +101,8 @@
                       <ul class="dropdown-menu">
                         <li><a href="#">ผลงานนักศึกษา</a></li>
                         <li><a href="#">ผลงานอาจารย์</a></li>
-						<li><a href="#">งานประชุมวิชาการ</a></li>
+
+						<li><a href="?page=conference_main">งานประชุมวิชาการ</a></li>
                       </ul>
                     </li>
                   
