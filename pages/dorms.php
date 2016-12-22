@@ -1,3 +1,5 @@
+<?php include_once("analyticstracking.php") ?>
+
 <div class="flexslider" id="section-slider">
   <ul class="slides">
       <li>

@@ -1,10 +1,14 @@
+<?php include_once("analyticstracking.php") ?>
+
 <div class="section section-white" id="section-slider">
   <div class="container">
     <div class="row">
         <div class="col-md-12 wow slideInLeft">
           <div class="section-heading text-center ">
-            </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
-              <hr>
+            </br></br> 
+              <p class="style23">คณะวิทยาศาสตร์และเทคโนโลยีมีความมุ่งมั่นในการจัดการศึกษาของคณะวิทยาศาสตร์และเทคโนโลยี  มหาวิทยาลัยหอการค้าไทย ที่จะสร้างบัณฑิตที่สำเร็จการศึกษา  ให้เป็นผู้ที่มีความพร้อมทางวิชาการ สามารถนำไปประยุกต์  ใช้เพื่อก่อให้เกิดประโยชน์ต่อการพัฒนาสังคมและประเทศชาติเป็นผู้ที่มี  คุณธรรมและจริยธรรมอย่างแท้จริง ดังคำปณิธาน</p>
+          <p align="center" class="style23"><strong>&quot;วิชาการนำ จริยธรรมเด่น&quot;</strong></p>
+			  <hr>
             </div>
         </div>
     </div>

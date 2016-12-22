@@ -1,3 +1,5 @@
+<?php include_once("analyticstracking.php") ?>
+
 <?php
 require_once 'class/news.php';
 $news = new news();
