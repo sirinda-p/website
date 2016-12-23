@@ -74,8 +74,18 @@
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
                     <li<?php echo $page=='index'?' class="active"':'';?>><a href="?page=index">หน้าแรก</a></li>
-                    <li<?php echo $page=='aboutus'?' class="active"':'';?>><a href="?page=aboutus">เกี่ยวกับเรา</a></li> 
+                     
 				 
+					<li<?php echo $page=='index2'?' class="active"':'';?>>
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void();">เกี่ยวกับเรา<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="?page=./aboutus/history">ประวัติความเป็นมา</a></li>
+                        <li><a href="?page=./aboutus/purpose">ปรัชญา ปณิธาน</a></li>
+
+						<li><a href="?page=./aboutus/present">ปัจจุบัน</a></li>
+                      </ul>
+                    </li>
+					
                     <li<?php echo $page=='index2'?' class="active"':'';?>>
                       <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void();">ผู้ที่สนใจ<span class="caret"></span></a>
                       <ul class="dropdown-menu">
