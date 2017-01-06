@@ -83,6 +83,7 @@
                         <li><a href="?page=./aboutus/purpose">ปรัชญา ปณิธาน</a></li>
 
 						<li><a href="?page=./aboutus/present">ปัจจุบัน</a></li>
+						<li><a href="?page=instructors">อาจารย์</a></li>
                       </ul>
                     </li>
 					
@@ -91,7 +92,7 @@
                       <ul class="dropdown-menu">
                         <li><a href="?page=majors">ปริญญาตรี</a></li>
                         <li><a href="#">ปริญญาโท</a></li>
-                        <li><a href="?page=instructors">อาจารย์</a></li>
+                        
                         <li><a href="?page=rate">ค่าใช้จ่าย</a></li>
                         <li><a href="<?php echo $_CONFIG['admissionLink'] ?>">สมัครเรียน</a></li>
                         <li><a href="<?php echo $_CONFIG['scholarship'] ?>">ทุนการศึกษา</a></li>
@@ -106,6 +107,7 @@
                         </li>  >-->
                       </ul>
                     </li>
+					<!--
                     <li<?php echo $page=='index2'?' class="active"':'';?>>
                       <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void();">งานวิชาการ<span class="caret"></span></a>
                       <ul class="dropdown-menu">
@@ -115,7 +117,7 @@
 						<li><a href="?page=conference_main">งานประชุมวิชาการ</a></li>
                       </ul>
                     </li>
-                  
+                    -->
                     <li<?php echo $page=='index2'?' class="active"':'';?>>
                   </li>
                     <li<?php echo $page=='index2'?' class="active"':'';?>>
