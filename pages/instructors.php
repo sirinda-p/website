@@ -21,6 +21,9 @@
     margin-right: 0px;
     margin-left: 0px;
   }
+	.team-desc-hover {
+		width: 100%;
+	}
 </style>
 <!-- slider start -->
 <div class="flexslider" id="section-slider">

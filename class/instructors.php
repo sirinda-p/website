@@ -25,7 +25,7 @@
           $preOut = '
           <div class="col-md-4 team-box col-sm-6 wow pulse" data-wow-delay=".3s">
             <div class="team-box">
-              <img src="images/ins/index.php?instructorID='.$row['instructorID'].'" alt="">
+							<img src="images/ins/cover.png" style="background:url(\'images/ins/index.php?instructorID='.$row['instructorID'].'\') no-repeat;background-size:cover;" alt="'.$row['firstname'].' '.$row['lastname'].'">
               <div class="team-box-inner">
                 <h4>'.$row['firstname'].' '.$row['lastname'].'</h4>
                 <div class="line"></div>
