@@ -136,6 +136,14 @@
                       </ul>
                     </li>
                     <li<?php echo $page=='contactus'?' class="active"':'';?>><a href="?page=contactus">ติดต่อเรา</a></li>
+					<li> 
+					<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void();">MIS<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                          
+                        <li><a href="http://10.12.21.169/sc_db/">MIS</a></li>
+                      </ul>
+                    </li>
+					 
                   <!--  <li><a class="page-scroll" href="#section-contact"  >contact</a></li> -->
                 </ul>
             </div>
