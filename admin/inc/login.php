@@ -1,5 +1,5 @@
 <?php
-  if($_SESSION['login']===base64_encode(md5($_SESSION['username']).session_id())){
+  if(@$_SESSION['login']===base64_encode(md5(@$_SESSION['username']).session_id())){
     header('Location: index.php');
     exit();
   }

@@ -63,7 +63,7 @@
 <body>
   <?php
     $r;
-    if($_SESSION['login']===base64_encode(md5($_SESSION['username']).session_id())){
+    if(@$_SESSION['login']===base64_encode(md5(@$_SESSION['username']).session_id())){
       $page = @$_GET['page'];
       if(!$page||$page==''){
         $page = 'index';
