@@ -3,7 +3,7 @@
 <div class="flexslider" id="section-slider">
   <ul class="slides">
       <li>
-        <img src="images/32blank.png" style="background-image:url('https://www.facebook.com/photo/download/?fbid=1365146620168258');" alt="สาขาวิชาเทคโนโลยีสารสนเทศและการสื่อสาร" class="img-responsive newscover">
+        <img src="images/32blank.png" style="background-image:url('images/blank.jpg');" alt="สาขาวิชาเทคโนโลยีสารสนเทศและการสื่อสาร" class="img-responsive newscover">
         <!--<object data="http://www.youtube.com/v/GLHbUmRSkGU?autoplay=1" class="img-responsive" style="width:100%;height: 125vh;"></object>-->
         <div class="flex-caption ">
           <h4 class="wow slideInLeft">ตารางสอน</h4>
@@ -28,9 +28,9 @@
 		  <li><a data-toggle="tab" href="#menu2"><i class="fa fa-list-alt" aria-hidden="true"></i> ตารางสอน 1-2559</a></li>
           <li><a data-toggle="tab" href="#menu1"><i class="fa fa-list-alt" aria-hidden="true"></i> ตารางสอน 2-2558</a></li>
         </ul>
-		
+
             <div class="tab-content col-sm-12" style="border: 1px solid #ddd;border-top:0px;padding:20px;">
-             
+
 			 	<div id="home" class="tab-pane fade in active">
                   <ul class="col-sm-12 grid cs-style-3">
                     <div class="col-md-4 col-sm-6 wow slideInLeft">
@@ -99,7 +99,7 @@
                         </figure>
                       </a>
                     </div>
-					
+
 					<div class="col-md-4 col-sm-6 wow slideInLeft">
                       <a href="https://docs.google.com/spreadsheets/d/146cSNmJrqKpP-84_-FcaOUKyNYzSLSKTXj1JJSj-gu4/edit?usp=sharing" target="_blank">
                         <figure>
@@ -111,10 +111,10 @@
                         </figure>
                       </a>
                     </div>
-					
+
                   </ul>
                 </div>
-			 
+
 			 <div id="menu2" class="tab-pane fade">
                   <ul class="col-sm-12 grid cs-style-3">
                     <div class="col-md-4 col-sm-6 wow slideInLeft">
@@ -185,7 +185,7 @@
                     </div>
                   </ul>
                 </div>
-				
+
                 <div id="menu1" class="tab-pane fade">
                   <ul class="col-sm-12 grid cs-style-3">
                     <div class="col-md-4 col-sm-6 wow slideInLeft">

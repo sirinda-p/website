@@ -21,7 +21,7 @@
 <div class="flexslider" id="section-slider">
   <ul class="slides">
       <li>
-        <img src="images/32blank.png" style="background-image:url('https://www.facebook.com/photo/download/?fbid=1365146620168258');" alt="สาขาวิชาเทคโนโลยีสารสนเทศและการสื่อสาร" class="img-responsive newscover">
+        <img src="images/32blank.png" style="background-image:url('images/blank.jpg');" alt="สาขาวิชาเทคโนโลยีสารสนเทศและการสื่อสาร" class="img-responsive newscover">
         <!--<object data="http://www.youtube.com/v/GLHbUmRSkGU?autoplay=1" class="img-responsive" style="width:100%;height: 125vh;"></object>-->
         <div class="flex-caption ">
           <h4 class="wow slideInLeft">สาขาวิชาวิทยาศาสตร์และเทคโนโลยีการอาหาร</h4>
@@ -176,13 +176,13 @@
             </div>
             <div id="menu2" class="tab-pane fade">
               <h3>ผู้สำเร็จการศึกษาหลักสูตรนี้ สามารถประกอบอาชีพที่เกี่ยวข้องกับสาขาวิชา ได้แก่</h3>
-			  <p> สามารถทำงานในโรงงานอุตสาหกรรมอาหารต่างๆ เช่น ผลิตภัณฑ์ขนมหวาน ขนมขบเคี้ยว นม เครื่องดื่ม เบียร์ ผลไม้และผัก อาหารทะเลและอื่นๆ หรือทำงานในหน่วยงานของรัฐและรัฐวิสาหกิจ เช่น สำนักงานมาตรฐานอุตสาหกรรม และสถาบันอาหาร ในตำแหน่งงานต่อไปนี้  
+			  <p> สามารถทำงานในโรงงานอุตสาหกรรมอาหารต่างๆ เช่น ผลิตภัณฑ์ขนมหวาน ขนมขบเคี้ยว นม เครื่องดื่ม เบียร์ ผลไม้และผัก อาหารทะเลและอื่นๆ หรือทำงานในหน่วยงานของรัฐและรัฐวิสาหกิจ เช่น สำนักงานมาตรฐานอุตสาหกรรม และสถาบันอาหาร ในตำแหน่งงานต่อไปนี้
               <p style="padding-left:30px;">
                   1) ผู้ควบคุมการผลิต        <br>
                   2)  ผู้ตรวจสอบและประกันคุณภาพ<br>
                   3)      นักวิจัยและพัฒนาผลิตภัณฑ์<br>
                   4)     นักวิชาการ และบริการวิชาการ <br>
-    
+
               </p>
             </div>
           </div>

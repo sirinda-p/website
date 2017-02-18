@@ -21,7 +21,7 @@
 <div class="flexslider" id="section-slider">
   <ul class="slides">
       <li>
-        <img src="images/32blank.png" style="background-image:url('https://www.facebook.com/photo/download/?fbid=1365146620168258');" alt="สาขาวิชาเทคโนโลยีสารสนเทศและการสื่อสาร" class="img-responsive newscover">
+        <img src="images/32blank.png" style="background-image:url('images/blank.jpg');" alt="สาขาวิชาเทคโนโลยีสารสนเทศและการสื่อสาร" class="img-responsive newscover">
         <!--<object data="http://www.youtube.com/v/GLHbUmRSkGU?autoplay=1" class="img-responsive" style="width:100%;height: 125vh;"></object>-->
         <div class="flex-caption ">
           <h4 class="wow slideInLeft">สาขาวิชาเทคโนโลยีสารสนเทศและการสื่อสาร</h4>
