@@ -39,7 +39,7 @@
             <div class="row">
               <div class="col-sm-12">
                 <div class="alert alert-success">
-                  <strong>Login success!</strong> Please wait or <a href="index.php">click here</a>.
+                  <strong>Login success!</strong> Please wait or <a href="javascript:void(0);" onclick="window.location.reload(1);">click here</a>.
                 </div>
               </div>
             </div>
