@@ -43,7 +43,7 @@
             <div class="sidebar-nav navbar-collapse">
                 <ul class="nav" id="side-menu">
                     <li>
-                        <a href="?"><i class="fa fa-dashboard fa-fw"></i> News</a>
+                        <a href="?page=news"><i class="fa fa-dashboard fa-fw"></i> News</a>
                     </li>
                     <li>
                         <a href="?page=courses"><i class="fa fa-book fa-fw"></i> Courses</a>

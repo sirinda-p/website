@@ -35,6 +35,8 @@
     <link rel="stylesheet" type="text/css" href="dist/bootstrap3-wysihtml5.min.css"></link>
     <!-- Krajee Uploader -->
     <link href="../css/fileinput.css" media="all" rel="stylesheet" type="text/css" />
+		<!-- Datetime Picker -->
+		<link href="../css/jquery.datetimepicker.min.css" media="all" rel="stylesheet" type="text/css" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -64,6 +66,13 @@
 		tr.inactive {
 			background-color: rgba(0,0,0,.3) !important;
 			color: white !important;
+		}
+		tr.draft {
+			background-color: rgba(255,0,0,.1) !important;
+			color: white !important;
+		}
+		td.outline {
+			text-overflow:ellipsis;
 		}
     </style>
 </head>
@@ -125,7 +134,9 @@ if(@$_REQUEST['modal']!='true'){
         allowedFileExtensions: ["jpg"]
     });
   </script>
-
+	<!-- Datetime Picker -->
+	<script src="../js/moment-with-locales.js" type="text/javascript"></script>
+	<script src="../js/jquery.datetimepicker.full.js" type="text/javascript"></script>
   <!-- Custom Theme JavaScript -->
   <script src="dist/js/sb-admin-2.js"></script>
   <script>
