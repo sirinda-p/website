@@ -136,7 +136,7 @@ if($action=='add'){
 		if($isSuccess) echo "window.top.window.editSuccess();";
 		echo "</script>";
 	}
-	$data = $ins->getInsInfo($instructorID);
+	if(!$data = $ins->getInsInfo($instructorID)) echo "<script>window.top.window.location.reload(1);</script>";
 ?>
 <form method="POST" id="form" enctype="multipart/form-data" action="?modal=true&page=instructors&action=edit&instructorID=<?php echo $data['instructorID'];?>" target="operator">
 	<div class="panel panel-default">

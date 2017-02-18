@@ -25,7 +25,6 @@
 						} else $result .= '<div class="row"><div class="col-lg-12"><div class="alert alert-Danger"><strong>Error!</strong> Fail to add news. Please contact Administrator.</div></div></div>';
 					} else $result .= '<div class="row"><div class="col-lg-12"><div class="alert alert-warning"><strong>Warning!</strong> File is not an image.</div></div></div>';
 				} else $result .= '<div class="row"><div class="col-lg-12"><div class="alert alert-warning"><strong>Warning!</strong> Sorry, only JPG files are allowed.</div></div></div>';
-
 			} else $result .= '<div class="row"><div class="col-lg-12"><div class="alert alert-warning"><strong>Warning!</strong> Please fill in all fields.</div></div></div>';
 			echo "<script>window.top.window.setResult('$result');";
 			if($isSuccess) echo "window.top.window.addSuccess();";
@@ -142,7 +141,7 @@
 			if($title&&$type&&$status&&$outline&&$content){
 				if($news->edit($newsID,$title,$type,$status,$outline,$content,$datetime)){
 					$result .= '<div class="row"><div class="col-lg-12"><div class="alert alert-success"><strong>Success!</strong> News was edited. (News ID : '.$newsID.')</div></div></div>';
-					mkdir($uploadTo.$newsID);
+					//mkdir($uploadTo.$newsID);
 					$isSuccess = true;
 				} else $result .= '<div class="row"><div class="col-lg-12"><div class="alert alert-Danger"><strong>Error!</strong> Fail to edit news. Please contact Administrator.</div></div></div>';
 			} else $result .= '<div class="row"><div class="col-lg-12"><div class="alert alert-warning"><strong>Warning!</strong> Please fill in all fields.</div></div></div>';
@@ -150,7 +149,7 @@
 			if($isSuccess) echo "window.top.window.editSuccess();";
 			echo "</script>";
 		} else {
-			$data = $news->getNews($newsID,'row');
+			if(!$data = $news->getNews($newsID,'row')) echo "<script>window.top.window.location.reload(1);</script>";
 ?>
 			<form method="POST" id="form" enctype="multipart/form-data" action="?modal=true&page=news&action=edit&newsID=<?php echo $data['newsID'];?>" target="operator">
 				<div class="panel panel-default">
@@ -256,11 +255,7 @@
 				}
 				function editSuccess(){
 					$('#submitBtn,#cancelBtn').prop('disabled', true);
-					$.each($('.newsImg'),function(k,i){
-						var url = $(this).data('url');
-						$(this).css("background-image", "url(" + url + "&random=" + (Math.random()) + ")");
-					})
-					setTimeout(function(){$('#modalDialog').modal('hide');},3000);
+					setTimeout(function(){$('#modalDialog').modal('hide');window.location.reload(1);},3000);
 				}
 			</script>
 <?php
