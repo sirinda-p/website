@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 31, 2016 at 12:53 PM
+-- Generation Time: Feb 18, 2017 at 09:33 PM
 -- Server version: 5.6.24
 -- PHP Version: 5.6.8
 
@@ -63,89 +63,90 @@ CREATE TABLE IF NOT EXISTS `instructor` (
   `lastname` varchar(50) COLLATE utf8_bin NOT NULL,
   `email` varchar(100) COLLATE utf8_bin NOT NULL,
   `courseID` int(11) NOT NULL,
-  `website` varchar(250) COLLATE utf8_bin NOT NULL
+  `website` varchar(250) COLLATE utf8_bin NOT NULL,
+  `status` enum('A','I','P') COLLATE utf8_bin NOT NULL DEFAULT 'A'
 ) ENGINE=InnoDB AUTO_INCREMENT=76 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Dumping data for table `instructor`
 --
 
-INSERT INTO `instructor` (`instructorID`, `post`, `firstname`, `lastname`, `email`, `courseID`, `website`) VALUES
-(1, 'อาจารย์ ดร.', 'ยอดธง', 'รอดแก้ว', 'yodthong_rod@utcc.ac.th', 1, '-'),
-(2, 'ผู้ช่วยศาสตราจารย์', 'วรัตมา', 'เกษรสิทธิ์', 'warattama@hotmail.com', 1, '-'),
-(3, 'อาจารย์', 'ศรันยา', 'มะระพฤกษ์วรรณ', 'scitech.utcc@gmail.com', 1, '-'),
-(4, 'ผู้ช่วยศาสตราจารย์', 'อรรถวิท', 'กปิลกาญจน์', 'attawit_kap@utcc.ac.th', 1, ''),
-(5, 'อาจารย์ ดร.', 'จักรินทร์', 'สิงห์หนู', 'jakkarin_sin@utcc.ac.th', 1, ''),
-(6, 'ผู้ช่วยศาสตราจารย์', 'เกศศิริ', 'เหล่าวชิระสุวรรณ', 'katsiri_lao@utcc.ac.th', 11, ''),
-(7, 'อาจารย์', 'เฉลิมพงค์', 'คำวงค์ษา', 'chalermpong_kum@utcc.ac.th', 11, ''),
-(8, 'ผู้ช่วยศาสตราจารย์ ดร.', 'เหมือนหมาย', 'อภินทนาพงศ์', 'mmeang@gmail.com', 11, ''),
-(9, 'อาจารย์', 'จตุภัทร', 'ขจัดภัย', 'jatupat_kaj@utcc.ac.th', 11, ''),
-(10, 'ผู้ช่วยศาสตราจารย์', 'ทวีศักดิ์', 'พงษ์ปัญญา', 'taveesak_pho@utcc.ac.th', 11, ''),
-(11, 'อาจารย์', 'ทิวา', 'เพ็ญสุข', 'tiwa_pen@utcc.ac.th', 11, ''),
-(12, 'อาจารย์', 'ธนวรรษ์', 'เสริมพาณิชย์', 'thanawat_ser@utcc.ac.th', 11, ''),
-(13, 'อาจารย์', 'ธีรวุฒิ', 'หวังอำนวยพร', 'theerawut_wan@utcc.ac.th', 11, ''),
-(14, 'อาจารย์', 'นิศานาถ', 'ขันธวิสูตร', 'nisanath_kha@utcc.ac.th', 11, ''),
-(15, 'ผู้ช่วยศาสตราจารย์', 'บุญหญิง', 'สมร่าง', 'boonying_som@utcc.ac.th', 11, ''),
-(16, 'อาจารย์', 'ประยง', 'มหากิตติคุณ', 'prayong_mah@utcc.ac.th', 11, ''),
-(17, 'อาจารย์', 'ปัทมพร', 'ราชภักดี', 'pattamaporn_rat@utcc.ac.th', 11, ''),
-(18, 'ผู้ช่วยศาสตราจารย์', 'พรชัย', 'เหลืองบริสุทธิ์', 'pornchai_lua@utcc.ac.th', 11, ''),
-(19, 'ผู้ช่วยศาสตราจารย์ ดร.', 'พิชญอร', 'ไหมสุทธิสกุล', 'pitchaon_mai@utcc.ac.th', 11, ''),
-(20, 'ผู้ช่วยศาสตราจารย์', 'ภัชรี', 'สิทธิกิจโยธิน', 'patcharee_sit@utcc.ac.th', 11, ''),
-(21, 'ผู้ช่วยศาสตราจารย์', 'ลักขณา', 'เศาธยะนันท์', 'luckhana_sao@utcc.ac.th', 11, ''),
-(22, 'อาจารย์', 'วิรัช', 'ตฤณขจี', 'virach_tin@utcc.ac.th', 11, ''),
-(23, 'อาจารย์ ดร.', 'อิทธิพงษ์', 'เขมะเพชร', 'ittipong_khe@utcc.ac.th', 11, ''),
-(24, 'อาจารย์ ดร.', 'วัศวี', 'แสนศรีมหาชัย', 'watsawee@yahoo.com', 11, ''),
-(25, 'อาจารย์', 'สุนันทา', 'คชสาร', 'sununta_kot@utcc.ac.th', 11, ''),
-(26, 'อาจารย์', 'สุวโรจน์', 'อัครวุฒิพรภัทร์', 'suwaroj_wut@utcc', 11, ''),
-(27, 'อาจารย์', 'ลักขณา', 'คิดบรรจง', 'lakkana_kid@utcc.ac.th', 2, ''),
-(28, 'ผู้ช่วยศาสตราจารย์ ดร.', 'วรลักษณ์ วงศ์โดยหวัง', 'ศิริเจริญ', 'waralak_von@utcc.ac.th', 2, ''),
-(29, 'ผู้ช่วยศาสตราจารย์', 'สิริธร', 'เจริญรัตน์', 'sirithorn_jal@utcc.ac.th', 2, ''),
-(30, 'ผู้ช่วยศาสตราจารย์', 'อารีวรรณ', 'สุขวิลัย', 'areewan_suk@hotmail.com', 2, ''),
-(31, 'อาจารย์ ดร.', 'มยุรี', 'ศรีกุลวงศ์', 'mayuree_sri@utcc.ac.th', 2, ''),
-(32, 'อาจารย์', 'เชาวศิริ', 'อินทร์แก้ว', 'chaowasiri_ink@utcc.ac.th', 3, ''),
-(33, 'อาจารย์', 'กนกพรรณ', 'แก้วเนตร', 'kanokphan_kae@utcc.ac.th', 3, ''),
-(34, 'อาจารย์', 'ทิฆัมพร', 'รอดเงิน', 'tukutcc@gmail.com', 3, ''),
-(35, 'อาจารย์', 'นลินี', 'เวชวิริยกุล', 'nalinee_wec@utcc.ac.th', 3, ''),
-(36, 'อาจารย์', 'ภาสกร', 'เกตุชาญวิทย์', 'pasakorn_ket@utcc.ac.th', 3, ''),
-(37, 'ผู้ช่วยศาสตราจารย์', 'ระวีวรรณ', 'เหล็งขยัน', 'raweewan_len@utcc.ac.th', 3, ''),
-(38, 'อาจารย์ ดร.', 'วรรณี', 'ลาภจินดา', 'wannee_lap@utcc.ac.th', 3, ''),
-(39, 'ผู้ช่วยศาสตราจารย์', 'วัลลภ', 'เฉลิมสุวิวัฒนาการ', 'wallop_cha@utcc.ac.th', 3, ''),
-(40, 'ผู้ช่วยศาสตราจารย์', 'สุชีพ', 'งามเจริญ', 'sucheep_nga@utcc.ac.th', 3, ''),
-(41, 'ผู้ช่วยศาสตราจารย์', 'กมลทิพย์', 'เอกธรรมสุทธิ์', 'kamontip_ekt@utcc.ac.th', 4, ''),
-(42, 'อาจารย์ ดร.', 'ทัศนีย์', 'วัฒนชัยยงค์', 'tasanee_wat@utcc.ac.th', 4, ''),
-(43, 'ผู้ช่วยศาสตราจารย์', 'สิรินาถ', 'ตัณฑเกษม', 'sirinard_tan@utcc.ac.th', 4, ''),
-(44, 'ผู้ช่วยศาสตราจารย์', 'สุภางค์', 'เรืองฉาย', 'supang_rua@utcc.ac.th', 4, ''),
-(45, 'รองศาสตราจารย์', 'อดิศักดิ์', 'เอกโสวรรณ', 'adisak_ake@utcc.ac.th', 4, ''),
-(46, 'ผู้ช่วยศาสตราจารย์', 'อภิญญา', 'เจริญกูล', 'apinya_cha@utcc.ac.th', 4, ''),
-(47, 'ผู้ช่วยศาสตราจารย์', 'อัญชัน', 'ชุณหะหิรัณย์', 'anchan_cho@utcc.ac.th', 4, ''),
-(48, 'ผู้ช่วยศาสตราจารย์', 'อุษามาส', 'จริยวรานุกุล', 'usamas_jar@utcc.ac.th', 4, ''),
-(49, 'ผู้ช่วยศาสตราจารย์', 'เอกรินทร์', 'วรุตบางกูร', 'realekarin@hotmail.com', 5, ''),
-(50, 'อาจารย์', 'คัดเค้า', 'สันธนะสุข', 'kadkao_san@utcc.ac.th', 5, ''),
-(51, 'ผู้ช่วยศาสตราจารย์', 'ชฎารัตน์', 'พิพัฒนนันท์', 'chadarat_phi@utcc.ac.th', 5, ''),
-(52, 'อาจารย์', 'วรวิทย์', 'จิตรงค์', 'vorawit_jit@utcc.ac.th', 5, ''),
-(53, 'อาจารย์ ดร.', 'ปิยะวรรณ', 'เกษมศุภกร', 'piyawan_kas@utcc.ac.th', 5, ''),
-(54, 'ผู้ช่วยศาสตราจารย์', 'ไขแข', 'จุลชาต', 'khaikhae_chu@utcc.ac.th', 6, ''),
-(55, 'ผู้ช่วยศาสตราจารย์', 'สุณี', 'ทวีสกุลวัชระ', 'sunee_tha@utcc.ac.th', 6, ''),
-(56, 'ผู้ช่วยศาสตราจารย์ ดร.', 'เสาวนีย์', 'เอี้ยวสกุลรัตน์', 'souwanee_ieo@utcc.ac.th', 7, ''),
-(57, 'ผู้ช่วยศาสตราจารย์', 'ผาณิต', 'รุจิรพิสิฐ', 'panid_ruj@utcc.ac.th', 7, ''),
-(58, 'ผู้ช่วยศาสตราจารย์', 'รัชนี', 'ไสยประจง', 'ratchanee_sai@utcc.ac.th', 7, ''),
-(59, 'ผู้ช่วยศาสตราจารย์', 'วิชชุดา', 'สังข์แก้ว', 'witchuda_san@utcc.ac.th', 7, ''),
-(60, 'ผู้ช่วยศาสตราจารย์', 'สุรพงษ์', 'พินิจกลาง', 'surapong_pin@utcc.ac.th', 7, ''),
-(61, 'อาจารย์', 'ไอศุริย', 'สุดประเสริฐ', 'aisuriya@gmail.com', 8, ''),
-(62, 'รองศาสตราจารย์', 'ดวงพร', 'หัชชะวณิช', 'doungporn_hat@utcc.ac.th', 8, ''),
-(63, 'รองศาสตราจารย์ ดร.', 'นิตติยา', 'ปภาพจน์', 'nittiya_pab@utcc.ac.th', 8, ''),
-(64, 'อาจารย์ ดร.', 'มานะชัย', 'โต๊ะชูดี', 'manachai_toa@utcc.ac.th', 8, ''),
-(65, 'อาจารย์ ดร.', 'อวภาส์', 'ฉันทศาสตร์รัศมี', 'avapa_cha@utcc.ac.th', 8, ''),
-(66, 'ผู้ช่วยศาสตราจารย์', 'นภาพร', 'อุทยานวุฒิกุล', 'napaporn_uta@utcc.ac.th', 9, ''),
-(67, 'ผู้ช่วยศาสตราจารย์ ดร.', 'น้ำฝน', 'อัศวเมฆิน', 'namfon_ass@utcc.ac.th', 9, ''),
-(68, 'ผู้ช่วยศาสตราจารย์ ดร.', 'ภาณุชาติ', 'บุณยเกียรติ', 'panuchart_bun@utcc.ac.th', 9, ''),
-(69, 'อาจารย์ ดร.', 'ศศิพันธ์', 'นิตยะประภา', 'sasiphan_nit@utcc.ac.th', 9, ''),
-(70, 'อาจารย์ ดร.', 'สิรินดา', 'พละหาญ', 'sirinda_pal@utcc.ac.th', 9, ''),
-(71, 'รองศาสตราจารย์ ดร.', 'ภูมิฐาน', 'รังคกูลนุวัฒน์', 'scitech.utcc@gmail.com', 10, ''),
-(72, 'ผู้ช่วยศาสตราจารย์ ดร.', 'วีระชาติ', 'กิเลนทอง', 'scitech.utcc@gmail.com', 10, ''),
-(73, 'อาจารย์ ดร.', 'นงนภัส', 'แก้วพลอย', 'scitech.utcc@gmail.com', 10, ''),
-(74, 'ผู้ช่วยศาสตราจารย์', 'ยุพิน', 'กาญจนะศักดิ์ดา', 'yupin_kan@utcc.ac.th', 10, ''),
-(75, 'ผู้ช่วยศาสตราจารย์ ดร.', 'สมพร', 'ปั่นโภชา', 'somporn_pun@utcc.ac.th', 10, '');
+INSERT INTO `instructor` (`instructorID`, `post`, `firstname`, `lastname`, `email`, `courseID`, `website`, `status`) VALUES
+(1, 'อาจารย์ ดร.', 'ยอดธง', 'รอดแก้ว', 'yodthong_rod@utcc.ac.th', 1, '-', 'A'),
+(2, 'ผู้ช่วยศาสตราจารย์', 'วรัตมา', 'เกษรสิทธิ์', 'warattama@hotmail.com', 1, '-', 'A'),
+(3, 'อาจารย์', 'ศรันยา', 'มะระพฤกษ์วรรณ', 'scitech.utcc@gmail.com', 1, '-', 'A'),
+(4, 'ผู้ช่วยศาสตราจารย์', 'อรรถวิท', 'กปิลกาญจน์', 'attawit_kap@utcc.ac.th', 1, '', 'A'),
+(5, 'อาจารย์ ดร.', 'จักรินทร์', 'สิงห์หนู', 'jakkarin_sin@utcc.ac.th', 1, '', 'A'),
+(6, 'ผู้ช่วยศาสตราจารย์', 'เกศศิริ', 'เหล่าวชิระสุวรรณ', 'katsiri_lao@utcc.ac.th', 11, '', 'A'),
+(7, 'อาจารย์', 'เฉลิมพงค์', 'คำวงค์ษา', 'chalermpong_kum@utcc.ac.th', 11, '', 'A'),
+(8, 'ผู้ช่วยศาสตราจารย์ ดร.', 'เหมือนหมาย', 'อภินทนาพงศ์', 'mmeang@gmail.com', 11, '', 'A'),
+(9, 'อาจารย์', 'จตุภัทร', 'ขจัดภัย', 'jatupat_kaj@utcc.ac.th', 11, '', 'A'),
+(10, 'ผู้ช่วยศาสตราจารย์', 'ทวีศักดิ์', 'พงษ์ปัญญา', 'taveesak_pho@utcc.ac.th', 11, '', 'A'),
+(11, 'อาจารย์', 'ทิวา', 'เพ็ญสุข', 'tiwa_pen@utcc.ac.th', 11, '', 'A'),
+(12, 'อาจารย์', 'ธนวรรษ์', 'เสริมพาณิชย์', 'thanawat_ser@utcc.ac.th', 11, '', 'A'),
+(13, 'อาจารย์', 'ธีรวุฒิ', 'หวังอำนวยพร', 'theerawut_wan@utcc.ac.th', 11, '', 'A'),
+(14, 'อาจารย์', 'นิศานาถ', 'ขันธวิสูตร', 'nisanath_kha@utcc.ac.th', 11, '', 'A'),
+(15, 'ผู้ช่วยศาสตราจารย์', 'บุญหญิง', 'สมร่าง', 'boonying_som@utcc.ac.th', 11, '', 'A'),
+(16, 'อาจารย์', 'ประยง', 'มหากิตติคุณ', 'prayong_mah@utcc.ac.th', 11, '', 'A'),
+(17, 'อาจารย์', 'ปัทมพร', 'ราชภักดี', 'pattamaporn_rat@utcc.ac.th', 11, '', 'A'),
+(18, 'ผู้ช่วยศาสตราจารย์', 'พรชัย', 'เหลืองบริสุทธิ์', 'pornchai_lua@utcc.ac.th', 11, '', 'A'),
+(19, 'ผู้ช่วยศาสตราจารย์ ดร.', 'พิชญอร', 'ไหมสุทธิสกุล', 'pitchaon_mai@utcc.ac.th', 11, '', 'A'),
+(20, 'ผู้ช่วยศาสตราจารย์', 'ภัชรี', 'สิทธิกิจโยธิน', 'patcharee_sit@utcc.ac.th', 11, '', 'A'),
+(21, 'ผู้ช่วยศาสตราจารย์', 'ลักขณา', 'เศาธยะนันท์', 'luckhana_sao@utcc.ac.th', 11, '', 'A'),
+(22, 'อาจารย์', 'วิรัช', 'ตฤณขจี', 'virach_tin@utcc.ac.th', 11, '', 'A'),
+(23, 'อาจารย์ ดร.', 'อิทธิพงษ์', 'เขมะเพชร', 'ittipong_khe@utcc.ac.th', 11, '', 'A'),
+(24, 'อาจารย์ ดร.', 'วัศวี', 'แสนศรีมหาชัย', 'watsawee@yahoo.com', 11, '', 'A'),
+(25, 'อาจารย์', 'สุนันทา', 'คชสาร', 'sununta_kot@utcc.ac.th', 11, '', 'A'),
+(26, 'อาจารย์', 'สุวโรจน์', 'อัครวุฒิพรภัทร์', 'suwaroj_wut@utcc', 11, '', 'A'),
+(27, 'อาจารย์', 'ลักขณา', 'คิดบรรจง', 'lakkana_kid@utcc.ac.th', 2, '', 'A'),
+(28, 'ผู้ช่วยศาสตราจารย์ ดร.', 'วรลักษณ์ วงศ์โดยหวัง', 'ศิริเจริญ', 'waralak_von@utcc.ac.th', 2, '', 'A'),
+(29, 'ผู้ช่วยศาสตราจารย์', 'สิริธร', 'เจริญรัตน์', 'sirithorn_jal@utcc.ac.th', 2, '', 'A'),
+(30, 'ผู้ช่วยศาสตราจารย์', 'อารีวรรณ', 'สุขวิลัย', 'areewan_suk@hotmail.com', 2, '', 'A'),
+(31, 'อาจารย์ ดร.', 'มยุรี', 'ศรีกุลวงศ์', 'mayuree_sri@utcc.ac.th', 2, '', 'A'),
+(32, 'อาจารย์', 'เชาวศิริ', 'อินทร์แก้ว', 'chaowasiri_ink@utcc.ac.th', 3, '', 'A'),
+(33, 'อาจารย์', 'กนกพรรณ', 'แก้วเนตร', 'kanokphan_kae@utcc.ac.th', 3, '', 'A'),
+(34, 'อาจารย์', 'ทิฆัมพร', 'รอดเงิน', 'tukutcc@gmail.com', 3, '', 'A'),
+(35, 'อาจารย์', 'นลินี', 'เวชวิริยกุล', 'nalinee_wec@utcc.ac.th', 3, '', 'A'),
+(36, 'อาจารย์', 'ภาสกร', 'เกตุชาญวิทย์', 'pasakorn_ket@utcc.ac.th', 3, '', 'A'),
+(37, 'ผู้ช่วยศาสตราจารย์', 'ระวีวรรณ', 'เหล็งขยัน', 'raweewan_len@utcc.ac.th', 3, '', 'A'),
+(38, 'อาจารย์ ดร.', 'วรรณี', 'ลาภจินดา', 'wannee_lap@utcc.ac.th', 3, '', 'A'),
+(39, 'ผู้ช่วยศาสตราจารย์', 'วัลลภ', 'เฉลิมสุวิวัฒนาการ', 'wallop_cha@utcc.ac.th', 3, '', 'A'),
+(40, 'ผู้ช่วยศาสตราจารย์', 'สุชีพ', 'งามเจริญ', 'sucheep_nga@utcc.ac.th', 3, '', 'A'),
+(41, 'ผู้ช่วยศาสตราจารย์', 'กมลทิพย์', 'เอกธรรมสุทธิ์', 'kamontip_ekt@utcc.ac.th', 4, '', 'A'),
+(42, 'อาจารย์ ดร.', 'ทัศนีย์', 'วัฒนชัยยงค์', 'tasanee_wat@utcc.ac.th', 4, '', 'A'),
+(43, 'ผู้ช่วยศาสตราจารย์', 'สิรินาถ', 'ตัณฑเกษม', 'sirinard_tan@utcc.ac.th', 4, '', 'A'),
+(44, 'ผู้ช่วยศาสตราจารย์', 'สุภางค์', 'เรืองฉาย', 'supang_rua@utcc.ac.th', 4, '', 'A'),
+(45, 'รองศาสตราจารย์', 'อดิศักดิ์', 'เอกโสวรรณ', 'adisak_ake@utcc.ac.th', 4, '', 'A'),
+(46, 'ผู้ช่วยศาสตราจารย์', 'อภิญญา', 'เจริญกูล', 'apinya_cha@utcc.ac.th', 4, '', 'A'),
+(47, 'ผู้ช่วยศาสตราจารย์', 'อัญชัน', 'ชุณหะหิรัณย์', 'anchan_cho@utcc.ac.th', 4, '', 'A'),
+(48, 'ผู้ช่วยศาสตราจารย์', 'อุษามาส', 'จริยวรานุกุล', 'usamas_jar@utcc.ac.th', 4, '', 'A'),
+(49, 'ผู้ช่วยศาสตราจารย์', 'เอกรินทร์', 'วรุตบางกูร', 'realekarin@hotmail.com', 5, '', 'A'),
+(50, 'อาจารย์', 'คัดเค้า', 'สันธนะสุข', 'kadkao_san@utcc.ac.th', 5, '', 'A'),
+(51, 'ผู้ช่วยศาสตราจารย์', 'ชฎารัตน์', 'พิพัฒนนันท์', 'chadarat_phi@utcc.ac.th', 5, '', 'A'),
+(52, 'อาจารย์', 'วรวิทย์', 'จิตรงค์', 'vorawit_jit@utcc.ac.th', 5, '', 'A'),
+(53, 'อาจารย์ ดร.', 'ปิยะวรรณ', 'เกษมศุภกร', 'piyawan_kas@utcc.ac.th', 5, '', 'A'),
+(54, 'ผู้ช่วยศาสตราจารย์', 'ไขแข', 'จุลชาต', 'khaikhae_chu@utcc.ac.th', 6, '', 'A'),
+(55, 'ผู้ช่วยศาสตราจารย์', 'สุณี', 'ทวีสกุลวัชระ', 'sunee_tha@utcc.ac.th', 6, '', 'A'),
+(56, 'ผู้ช่วยศาสตราจารย์ ดร.', 'เสาวนีย์', 'เอี้ยวสกุลรัตน์', 'souwanee_ieo@utcc.ac.th', 7, '', 'A'),
+(57, 'ผู้ช่วยศาสตราจารย์', 'ผาณิต', 'รุจิรพิสิฐ', 'panid_ruj@utcc.ac.th', 7, '', 'A'),
+(58, 'ผู้ช่วยศาสตราจารย์', 'รัชนี', 'ไสยประจง', 'ratchanee_sai@utcc.ac.th', 7, '', 'A'),
+(59, 'ผู้ช่วยศาสตราจารย์', 'วิชชุดา', 'สังข์แก้ว', 'witchuda_san@utcc.ac.th', 7, '', 'A'),
+(60, 'ผู้ช่วยศาสตราจารย์', 'สุรพงษ์', 'พินิจกลาง', 'surapong_pin@utcc.ac.th', 7, '', 'A'),
+(61, 'อาจารย์', 'ไอศุริย', 'สุดประเสริฐ', 'aisuriya@gmail.com', 8, '', 'A'),
+(62, 'รองศาสตราจารย์', 'ดวงพร', 'หัชชะวณิช', 'doungporn_hat@utcc.ac.th', 8, '', 'A'),
+(63, 'รองศาสตราจารย์ ดร.', 'นิตติยา', 'ปภาพจน์', 'nittiya_pab@utcc.ac.th', 8, '', 'A'),
+(64, 'อาจารย์ ดร.', 'มานะชัย', 'โต๊ะชูดี', 'manachai_toa@utcc.ac.th', 8, '', 'A'),
+(65, 'อาจารย์ ดร.', 'อวภาส์', 'ฉันทศาสตร์รัศมี', 'avapa_cha@utcc.ac.th', 8, '', 'A'),
+(66, 'ผู้ช่วยศาสตราจารย์', 'นภาพร', 'อุทยานวุฒิกุล', 'napaporn_uta@utcc.ac.th', 9, '', 'A'),
+(67, 'ผู้ช่วยศาสตราจารย์ ดร.', 'น้ำฝน', 'อัศวเมฆิน', 'namfon_ass@utcc.ac.th', 9, '', 'A'),
+(68, 'ผู้ช่วยศาสตราจารย์ ดร.', 'ภาณุชาติ', 'บุณยเกียรติ', 'panuchart_bun@utcc.ac.th', 9, '', 'A'),
+(69, 'อาจารย์ ดร.', 'ศศิพันธ์', 'นิตยะประภา', 'sasiphan_nit@utcc.ac.th', 9, '', 'A'),
+(70, 'อาจารย์ ดร.', 'สิรินดา', 'พละหาญ', 'sirinda_pal@utcc.ac.th', 9, '', 'A'),
+(71, 'รองศาสตราจารย์ ดร.', 'ภูมิฐาน', 'รังคกูลนุวัฒน์', 'scitech.utcc@gmail.com', 10, '', 'A'),
+(72, 'ผู้ช่วยศาสตราจารย์ ดร.', 'วีระชาติ', 'กิเลนทอง', 'scitech.utcc@gmail.com', 10, '', 'A'),
+(73, 'อาจารย์ ดร.', 'นงนภัส', 'แก้วพลอย', 'scitech.utcc@gmail.com', 10, '', 'A'),
+(74, 'ผู้ช่วยศาสตราจารย์', 'ยุพิน', 'กาญจนะศักดิ์ดา', 'yupin_kan@utcc.ac.th', 10, '', 'A'),
+(75, 'ผู้ช่วยศาสตราจารย์ ดร.', 'สมพร', 'ปั่นโภชา', 'somporn_pun@utcc.ac.th', 10, '', 'A');
 
 -- --------------------------------------------------------
 
@@ -199,6 +200,22 @@ INSERT INTO `post` (`postName`) VALUES
 ('อาจารย์'),
 ('อาจารย์ ดร.');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `publications`
+--
+
+CREATE TABLE IF NOT EXISTS `publications` (
+  `publicationsID` int(11) NOT NULL,
+  `type` enum('S','I') COLLATE utf8_bin NOT NULL,
+  `status` enum('A','D','I') COLLATE utf8_bin NOT NULL DEFAULT 'D',
+  `date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `title` varchar(100) COLLATE utf8_bin NOT NULL,
+  `outline` text COLLATE utf8_bin NOT NULL,
+  `content` text COLLATE utf8_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
 --
 -- Indexes for dumped tables
 --
@@ -228,6 +245,12 @@ ALTER TABLE `post`
   ADD PRIMARY KEY (`postName`);
 
 --
+-- Indexes for table `publications`
+--
+ALTER TABLE `publications`
+  ADD PRIMARY KEY (`publicationsID`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -246,6 +269,11 @@ ALTER TABLE `instructor`
 --
 ALTER TABLE `news`
   MODIFY `newsID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+--
+-- AUTO_INCREMENT for table `publications`
+--
+ALTER TABLE `publications`
+  MODIFY `publicationsID` int(11) NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

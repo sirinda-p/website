@@ -2,6 +2,7 @@
   ob_start();
   session_start();
   require_once '../config.php';
+	if(@$_REQUEST['modal']!='true'){
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -57,12 +58,20 @@
     .fileinput-upload-button,.kv-file-upload,.file-upload-indicator {
       display: none;
     }
+		.od:hover {
+			cursor: pointer;
+		}
+		tr.inactive {
+			background-color: rgba(0,0,0,.3) !important;
+			color: white !important;
+		}
     </style>
 </head>
 
 <body>
   <?php
     $r;
+}
     if(@$_SESSION['login']===base64_encode(md5(@$_SESSION['username']).session_id())){
       $page = @$_GET['page'];
       if(!$page||$page==''){
@@ -72,12 +81,13 @@
         $request = $page;
         $page = '404';
       }
-      require_once 'req/header.php';
+			if(@$_REQUEST['modal']!='true') require_once 'req/header.php';
       require_once 'inc/'.$page.'.php';
-      require_once 'req/footer.php';
+			if(@$_REQUEST['modal']!='true') require_once 'req/footer.php';
     } else {
       require_once 'inc/login.php';
     }
+if(@$_REQUEST['modal']!='true'){
   ?>
   <!-- jQuery -->
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -87,6 +97,11 @@
 
   <!-- Metis Menu Plugin JavaScript -->
   <script src="vendor/metisMenu/metisMenu.min.js"></script>
+
+	<!-- DataTables JavaScript -->
+	<script src="vendor/datatables/js/jquery.dataTables.min.js"></script>
+	<script src="vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+	<script src="vendor/datatables-responsive/dataTables.responsive.js"></script>
 
   <!-- Morris Charts JavaScript -->
   <script src="vendor/raphael/raphael.min.js"></script>
@@ -115,10 +130,29 @@
   <script src="dist/js/sb-admin-2.js"></script>
   <script>
     $("#addnews").click(function(){window.location.href='?page=addnews';})
-    $("#addinstructor").click(function(){window.location.href='?page=instructors&action=add';})
-    $('#cancelBtn').click(function(){window.history.back(1);})
-    $('#submitBtn').click(function(){$('#form').submit();})
-  </script>
+		$("#addpublications").click(function(){window.location.href='?page=publications&action=add';})
+		$("#addinstructor").click(function(){window.location.href='?page=instructors&action=add';})
+		$('#cancelBtn').click(function(){window.history.back(1);})
+		$('#submitBtn').click(function(){$('#form').submit();})
+		$(document).ready(function() {
+			$('#dataTables').DataTable({
+					responsive: true
+				});
+		});
+		$('.od').click(function () {
+			console.log('fire');
+			var href = $(this).data('href');
+			var $this = $(this).data('target');
+			$('#modalDialogContent').load(href, function (response, status, xhr) {
+				if (status == "success") {
+					$($this).modal({ show: true });
+				}
+			});
+		});
+	</script>
 </body>
 
 </html>
+<?php
+}
+?>
