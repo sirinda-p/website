@@ -52,6 +52,9 @@
                         <a href="?page=instructors"><i class="fa fa-users fa-fw"></i> Instructors</a>
                     </li>
 										<li>
+                        <a href="?page=publications"><i class="fa fa-trophy fa-fw"></i> Publications</a>
+                    </li>
+										<li>
                         <a href="../" target="_blank"><i class="fa fa-desktop fa-fw"></i> View Site</a>
                     </li>
                 </ul>
