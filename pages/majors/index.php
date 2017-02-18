@@ -1,3 +1,8 @@
+<?php
+if(@$_COOKIE['lang']=='en'&&file_exists($_CONFIG['pages'].$_CONFIG['majorPath'].'index.en'.$_CONFIG['pagesType'])){
+		require_once $_CONFIG['pages'].$_CONFIG['majorPath'].'index.en'.$_CONFIG['pagesType'];
+} else {
+?>
 <!-- Major start -->
 <section class="section-padding">
   <div class="container">
@@ -80,3 +85,6 @@
   </div>
 </section>
 <!-- Major end -->
+<?php
+}
+?>

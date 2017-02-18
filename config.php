@@ -35,5 +35,9 @@ class Dbconfig {
 }
   $page = @$_REQUEST['page']!=""?$_REQUEST['page']:'index';
   if(!file_exists($_CONFIG['pages'].$page.$_CONFIG['pagesType'])) $page = '404';
-  $filePage = $_CONFIG['pages'].$page.$_CONFIG['pagesType'];
+	$lang;
+	if(@$_COOKIE['lang']=='en'){
+		if(file_exists($_CONFIG['pages'].$page.'.en'.$_CONFIG['pagesType'])) $lang = '.en';
+	}
+  $filePage = $_CONFIG['pages'].$page.$lang.$_CONFIG['pagesType'];
 ?>
