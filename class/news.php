@@ -205,6 +205,7 @@
 				$udatetime = ", `date`='$datetime'";
 			}
 			$sth = $this -> pdo -> prepare("UPDATE `news` SET `type`='$type', `status`='$status', `title`='$title', `outline`='$outline', `content`='$content'$udatetime WHERE `newsID` = '$id';");
+			return $sth -> execute();
 		}
 		public function inactive($id){
 			$sth = $this -> pdo -> prepare("UPDATE `news` SET `status` = 'I' WHERE `newsID` = '$id';");

@@ -139,12 +139,12 @@
 				} else $result .= '<div class="row"><div class="col-lg-12"><div class="alert alert-warning"><strong>Warning!</strong> Sorry, only JPG files are allowed.</div></div></div>';
 			}
 			$isSuccess = false;
-			if($title&&$type&&$status&&$cover&&$outline&&$content){
+			if($title&&$type&&$status&&$outline&&$content){
 				if($news->edit($newsID,$title,$type,$status,$outline,$content,$datetime)){
-					$result .= '<div class="row"><div class="col-lg-12"><div class="alert alert-success"><strong>Success!</strong> News was added. (News ID : '.$newsID.')</div></div></div>';
+					$result .= '<div class="row"><div class="col-lg-12"><div class="alert alert-success"><strong>Success!</strong> News was edited. (News ID : '.$newsID.')</div></div></div>';
 					mkdir($uploadTo.$newsID);
 					$isSuccess = true;
-				} else $result .= '<div class="row"><div class="col-lg-12"><div class="alert alert-Danger"><strong>Error!</strong> Fail to add news. Please contact Administrator.</div></div></div>';
+				} else $result .= '<div class="row"><div class="col-lg-12"><div class="alert alert-Danger"><strong>Error!</strong> Fail to edit news. Please contact Administrator.</div></div></div>';
 			} else $result .= '<div class="row"><div class="col-lg-12"><div class="alert alert-warning"><strong>Warning!</strong> Please fill in all fields.</div></div></div>';
 			echo "<script>window.top.window.setResult('$result');";
 			if($isSuccess) echo "window.top.window.editSuccess();";
@@ -152,7 +152,7 @@
 		} else {
 			$data = $news->getNews($newsID,'row');
 ?>
-			<form method="POST" id="form" enctype="multipart/form-data" action="?modal=true&page=news&action=add&newsID=<?php echo $data['newsID'];?>" target="operator">
+			<form method="POST" id="form" enctype="multipart/form-data" action="?modal=true&page=news&action=edit&newsID=<?php echo $data['newsID'];?>" target="operator">
 				<div class="panel panel-default">
 					<div class="panel-heading">
 						<h4>Edit News</h4>
@@ -430,6 +430,14 @@
 					<!-- /.table-responsive -->
 				</div>
 				<!-- /.panel-body -->
+				<div class="panel-footer" style="padding-bottom: 30px;">
+					<div class="col-md-4 col-md-offset-4">
+						<div class="col-xs-4 status" style="border:1px solid black;">Normal</div>
+						<div class="col-xs-4 status draft" style="border:1px solid black;">Draft</div>
+						<div class="col-xs-4 status inactive" style="border:1px solid black;">Inactive</div>
+					</div>
+				</div>
+				<!-- /.panel-footer -->
 			</div>
 			<!-- /.panel -->
 		</div>

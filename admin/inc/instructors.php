@@ -386,6 +386,13 @@ if($action=='add'){
 				<!-- /.table-responsive -->
 			</div>
 			<!-- /.panel-body -->
+			<div class="panel-footer" style="padding-bottom: 30px;">
+				<div class="col-md-4 col-md-offset-4">
+					<div class="col-xs-4 status" style="border:1px solid black;">Active</div>
+					<div class="col-xs-4 status inactive" style="border:1px solid black;">Inactive</div>
+				</div>
+			</div>
+			<!-- /.panel-footer -->
 		</div>
 		<!-- /.panel -->
 	</div>

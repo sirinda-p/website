@@ -63,16 +63,19 @@
 		.od:hover {
 			cursor: pointer;
 		}
-		tr.inactive {
-			background-color: rgba(0,0,0,.3) !important;
+		tr.inactive, div.inactive {
+			background-color: rgba(255,0,0,.3) !important;
 			color: white !important;
 		}
-		tr.draft {
-			background-color: rgba(255,0,0,.1) !important;
-			color: white !important;
+		tr.draft, div.draft {
+			background-color: rgba(255,255,0,.3) !important;
+			color: gray !important;
 		}
 		td.outline {
 			text-overflow:ellipsis;
+		}
+		.status {
+			text-align: center;
 		}
     </style>
 </head>
