@@ -47,17 +47,17 @@
 										</li>  >-->
 									</ul>
 								</li>
-			<!--
+
 								<li<?php echo $page=='index2'?' class="active"':'';?>>
 									<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void();">งานวิชาการ<span class="caret"></span></a>
 									<ul class="dropdown-menu">
-										<li><a href="#">ผลงานนักศึกษา</a></li>
-										<li><a href="#">ผลงานอาจารย์</a></li>
-
-				<li><a href="?page=conference_main">งานประชุมวิชาการ</a></li>
+										<li><a href="?page=publications&type=S">ผลงานนักศึกษา</a></li>
+										<li><a href="?page=publications&type=I">ผลงานอาจารย์</a></li>
+			<!--
+				<li><a href="?page=conference_main">งานประชุมวิชาการ</a></li>-->
 									</ul>
 								</li>
-								-->
+
 								<li<?php echo $page=='index2'?' class="active"':'';?>>
 							</li>
 								<li<?php echo $page=='index2'?' class="active"':'';?>>

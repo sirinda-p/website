@@ -10,10 +10,10 @@ $news = new news();
 <div class="flexslider" id="section-slider">
   <ul class="slides">
       <li>
-        <img src="images/32blank.png" style="background-color:#044C29;" alt="" class="newscover">
+        <img src="images/32blank.png" style="background-image:url('images/blank.jpg');" alt="ข่าวสารประชาสัมพันธ์" class="img-responsive newscover">
         <!--<object data="http://www.youtube.com/v/GLHbUmRSkGU?autoplay=1" class="img-responsive" style="width:100%;height: 125vh;"></object>-->
         <div class="flex-caption ">
-          <h4 class="wow slideInLeft"><?php echo $news->title; ?></h4>
+					<h4 class="wow slideInLeft"><?php echo $news->title; ?></h4>
           <p><?php echo $news->outline; ?></p>
         </div>
       </li>
@@ -43,6 +43,18 @@ $news = new news();
 <?php
   } elseif($type=@$_REQUEST['type']) {
 ?>
+<div class="flexslider" id="section-slider">
+  <ul class="slides">
+      <li>
+        <img src="images/32blank.png" style="background-image:url('images/blank.jpg');" alt="ข่าวสารประชาสัมพันธ์" class="img-responsive newscover">
+        <!--<object data="http://www.youtube.com/v/GLHbUmRSkGU?autoplay=1" class="img-responsive" style="width:100%;height: 125vh;"></object>-->
+        <div class="flex-caption ">
+          <h4 class="wow slideInLeft">ข่าวสารประชาสัมพันธ์</h4>
+
+        </div>
+      </li>
+  </ul>
+</div>
 <!-- section blog start -->
 <section id="section-blog" class="section-padding bg-black">
     <div class="container">
