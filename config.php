@@ -39,5 +39,5 @@ class Dbconfig {
 	if(@$_COOKIE['lang']=='en'){
 		if(file_exists($_CONFIG['pages'].$page.'.en'.$_CONFIG['pagesType'])) $lang = '.en';
 	}
-  $filePage = $_CONFIG['pages'].$page.$lang.$_CONFIG['pagesType'];
+  $filePage = $_CONFIG['pages'].$page.@$lang.$_CONFIG['pagesType'];
 ?>
