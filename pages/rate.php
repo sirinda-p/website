@@ -93,7 +93,7 @@
           <div id="menu1" class="tab-pane fade">
             <div class="row">
                 <div class="col-md-12 wow bounceInUp">
-                      <img src="images/master of Science.jpg" alt="ค่าใช้จ่ายปริญญาโท" class="img-responsive">
+                      <img src="images/Master_of_Science.jpg" alt="ค่าใช้จ่ายปริญญาโท" class="img-responsive">
                 </div>
             </div>
             <div class="row">

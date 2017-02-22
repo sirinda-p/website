@@ -24,7 +24,7 @@
         <div class="row">
             <div class="col-md-12 wow bounceInUp">
               <div class="section-heading text-center">
-                  <img src="images/apartment around UTCC 2016.jpg" alt="ค่าใช้จ่ายปริญญาตรี" class="img-responsive">
+                  <img src="images/apartment_around_UTCC_2016.jpg" alt="ค่าใช้จ่ายปริญญาตรี" class="img-responsive">
                   <p style="padding-left:20px;">
                     <div class="btn-container regbut">
                       <a href="files/apartment_2016.pdf" target="_blank" class="btn btn-primary ">
