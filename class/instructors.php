@@ -99,7 +99,7 @@
 			while($row = $sth->fetch(PDO::FETCH_ASSOC)) {
 				$out .= '<div id="course'.$row['courseID'].'" class="tab-pane fade in">
 					<div class="container">
-						<div class="row">'.$this->getInsList($row['courseID']).'</div>
+						<div class="row">'.$this->getInsList($row['courseID'],'col').'</div>
 					</div>
 				</div>';
 			}
