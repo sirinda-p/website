@@ -3,7 +3,7 @@
 <?php
   $major = @$_REQUEST['major']!=""?$_REQUEST['major']:'index';
   if(!file_exists($_CONFIG['pages'].$_CONFIG['majorPath'].$major.$_CONFIG['pagesType'])) $major = 'index';
-	$lang;
+	$lang = '';
 	if(@$_COOKIE['lang']=='en'){
 		if(file_exists($_CONFIG['pages'].$_CONFIG['majorPath'].$major.'.en'.$_CONFIG['pagesType'])) $lang = '.en';
 	}

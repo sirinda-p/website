@@ -82,7 +82,7 @@
 		public function getPublicationsListAdmin(){
 			$sth = $this -> pdo -> prepare("SELECT * FROM `publications`");
 			$sth -> execute();
-			$out;
+			$out = '';
 			while($row = $sth->fetch(PDO::FETCH_ASSOC)) {
 				$out .= '
 				<tr';

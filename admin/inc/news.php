@@ -165,7 +165,7 @@
 						<div class="form-group col-sm-12">
 							<label for="datetimepicker">Date&Time:</label>
 							<div class='input-group date'>
-								<input type='text' class="form-control" id='datetimepicker' name="datetime" data-format="yyyy-MM-dd hh:mm:ss" />
+								<input type='text' class="form-control" id='datetimepicker' name="datetime" data-format="yyyy-MM-dd hh:mm:ss" value="<?php echo $data['date'];?>" />
 								<span class="input-group-addon" onclick="$('#datetimepicker').focus();">
 									<span class="glyphicon glyphicon-calendar"></span>
 								</span>
