@@ -2,7 +2,7 @@
   require_once "config.php";
 ?>
 <!DOCTYPE html>
-<html lang="en" manifest="appcache.php">
+<html lang="en">
 
 <head>
 
