@@ -117,7 +117,7 @@
 				}
 				$out .= '</tr>';
 			}
-			return @$out;
+			return $out;
 		}
     public function getNewsestPublications($type='A'){
       return $this->getPublications($this->getPublicationsList($type,'A','DESC',1)[0]);

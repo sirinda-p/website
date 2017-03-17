@@ -83,7 +83,7 @@
 		public function getNewsListAdmin(){
 			$sth = $this -> pdo -> prepare("SELECT * FROM `news`");
 			$sth -> execute();
-			$out='';
+			$out;
 			while($row = $sth->fetch(PDO::FETCH_ASSOC)) {
 				$out .= '
 				<tr';
@@ -118,7 +118,7 @@
 				}
 				$out .= '</tr>';
 			}
-			return @$out;
+			return $out;
 		}
 		public function getNewsestNews($type='A'){
 			return $this->getNews($this->getNewsList($type,'A','DESC',1)[0]);
