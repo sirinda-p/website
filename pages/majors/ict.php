@@ -36,7 +36,7 @@
       <div class="row">
           <div class="col-md-12 wow bounceInUp">
               <div class="section-heading text-center">
-                <img src="http://science.bu.ac.th/wp-content/uploads/2015/10/SE_Banner.jpg" alt="สาขาวิชาเทคโนโลยีสารสนเทศและการสื่อสาร" class="img-responsive">
+                <img src="images/majorBanner.jpg" alt="สาขาวิชาเทคโนโลยีสารสนเทศและการสื่อสาร" class="img-responsive">
                   <h2 class="section-title">สาขาวิชาเทคโนโลยีสารสนเทศและการสื่อสาร</h2>
                   <p>สามารถเรียนจบได้วุฒิปริญญาโทในระยะเวลาที่สั้นกว่า (4+1 ปี) โดยรวบรวมองค์ความรู้ทั้งทางด้านเทคโนโลยีสารสนเทศ, เทคโนโลยีการสื่อสาร, ธุรกิจ และการประยุกต์ใช้งานเทคโนโลยีในทางธุรกิจ</p>
               </div>

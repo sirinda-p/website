@@ -49,7 +49,7 @@
           <div id="home" class="tab-pane fade in active">
             <div class="row">
                 <div class="col-md-12 wow bounceInUp">
-                      <img src="http://science.bu.ac.th/wp-content/uploads/2015/10/SE_Banner.jpg" alt="ค่าใช้จ่ายปริญญาตรี" class="img-responsive">
+                      <img src="images/majorBanner.jpg" alt="ค่าใช้จ่ายปริญญาตรี" class="img-responsive">
                 </div>
             </div>
             <div class="row">
@@ -93,7 +93,7 @@
           <div id="menu1" class="tab-pane fade">
             <div class="row">
                 <div class="col-md-12 wow bounceInUp">
-                      <img src="images/master of Science.jpg" alt="ค่าใช้จ่ายปริญญาโท" class="img-responsive">
+                      <img src="images/Master_of_Science.jpg" alt="ค่าใช้จ่ายปริญญาโท" class="img-responsive">
                 </div>
             </div>
             <div class="row">
