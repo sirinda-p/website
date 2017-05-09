@@ -37,7 +37,7 @@
 										<li><a href="<?php echo $_CONFIG['admissionLink'] ?>">สมัครเรียน</a></li>
 										<li><a href="<?php echo $_CONFIG['scholarship'] ?>">ทุนการศึกษา</a></li>
 										<!--<li><a href="#">สิ่งส่งเสริมการศึกษา</a></li>-->
-										<li><a href="?page=dorms">หอพัก</a></li>
+										<li><a href="http://science.utcc.ac.th/files/apartment_2016.pdf">หอพัก</a></li>
 										<!-- <li class="dropdown-submenu">
 											<a tabindex="-1" href="javascript:void();">ความร่วมมือกับภายนอก</a>
 											<ul class="dropdown-menu">
@@ -51,8 +51,10 @@
 								<li<?php echo $page=='index2'?' class="active"':'';?>>
 									<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void();">งานวิชาการ<span class="caret"></span></a>
 									<ul class="dropdown-menu">
+									    <li><a href="http://science.utcc.ac.th/costis/">costis</a></li>
 										<li><a href="?page=publications&type=S">ผลงานนักศึกษา</a></li>
 										<li><a href="?page=publications&type=I">ผลงานอาจารย์</a></li>
+										
 			<!--
 				<li><a href="?page=conference_main">งานประชุมวิชาการ</a></li>-->
 									</ul>
@@ -81,6 +83,7 @@
 									<ul class="dropdown-menu">
 
 										<li><a href="http://10.12.21.169/sc_db/">MIS</a></li>
+										<li><a href="http://10.12.21.169/infonew/login.php">InfoQA</a></li>
 									</ul>
 								</li>
 
