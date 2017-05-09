@@ -47,11 +47,7 @@
         </ul>
         <div class="tab-content" style="border: 1px solid #ddd;border-top:0px;padding:20px;">
           <div id="home" class="tab-pane fade in active">
-            <div class="row">
-                <div class="col-md-12 wow bounceInUp">
-                      <img src="images/majorBanner.jpg" alt="ค่าใช้จ่ายปริญญาตรี" class="img-responsive">
-                </div>
-            </div>
+            
             <div class="row">
               <div class="col-md-12">
             <h3>ค่าใช้โดยประมาณการณ์จ่ายภาคที่ 1/2559 :</h3>
@@ -91,11 +87,7 @@
             </div>
           </div>
           <div id="menu1" class="tab-pane fade">
-            <div class="row">
-                <div class="col-md-12 wow bounceInUp">
-                      <img src="images/Master_of_Science.jpg" alt="ค่าใช้จ่ายปริญญาโท" class="img-responsive">
-                </div>
-            </div>
+             
             <div class="row">
               <div class="col-md-12">
             <h3>ค่าใช้จ่ายประมาณการณ์ตลอดหลักสูตร :</h3>
